@@ -2,6 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
+<<<<<<< HEAD
             "type": "cppbuild",
             "label": "C/C++: clang++ build active file",
             "command": "/usr/bin/clang++",
@@ -13,6 +14,16 @@
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
+=======
+            "label": "Build C++ Project",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17",
+                "${fileDirname}/*.cpp",
+                "-o",
+                "${fileDirname}/program"
+>>>>>>> edb43d4 (study)
             ],
             "options": {
                 "cwd": "${fileDirname}"
